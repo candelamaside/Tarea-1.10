@@ -2,7 +2,7 @@
  * DHTML Snowstorm! JavaScript-based snow for web pages
  * Making it snow on the internets since 2003. You're welcome.
  * -----------------------------------------------------------
- * Version 1.44.20131215 (Previous rev: 1.44.20131208)
+ * Version 1.44.20131208 (Previous rev: 1.44.20131125)
  * Copyright (c) 2007, Scott Schiller. All rights reserved.
  * Code provided under the BSD License
  * http://schillmania.com/projects/snowstorm/license.txt
@@ -22,6 +22,7 @@ var snowStorm = (function(window, document) {
   this.animationInterval = 33;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
   this.useGPU = true;             // Enable transform-based hardware acceleration, reduce CPU load.
   this.className = null;          // CSS class name for further customization on snow elements
+  this.excludeMobile = true;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) By default, be nice.
   this.flakeBottom = null;        // Integer for Y axis snow limit, 0 or null for "full-screen" snow effect
   this.followMouse = true;        // Snow movement can respond to the user's mouse
   this.snowColor = '#fff';        // Don't eat (or use?) yellow snow.
@@ -400,7 +401,6 @@ var snowStorm = (function(window, document) {
         s.o.style.top = storm.flakeBottom+'px';
       } else {
         s.o.style.display = 'none';
-        s.o.style.top = 'auto';
         s.o.style.bottom = '0%';
         s.o.style.position = 'fixed';
         s.o.style.display = 'block';
@@ -664,15 +664,3 @@ var snowStorm = (function(window, document) {
   return this;
 
 }(window, document));
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
