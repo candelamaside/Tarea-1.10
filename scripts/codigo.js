@@ -8,7 +8,7 @@ myImage.onclick = function(){
 
   let mySrc = myImage.getAttribute('src');
 
-  if(mySrc === 'https://www.freepngimg.com/download/computer/68394-computer-instagram-icons-png-file-hd.png'){
+  if(mySrc === 'https://www.movilzona.es/app/uploads/2018/02/Instagram-logotipo-fondo.jpg?x=720'){
 
     myImage.setAttribute ('src','https://cdn.pixabay.com/photo/2021/06/15/12/17/instagram-6338401_1280.png');
 
