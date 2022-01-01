@@ -1,7 +1,6 @@
-//Image switcher code
+// Image switcher code
 
-
-let myImage= document.querySelector('img');
+let myImage = document.querySelector('img');
 
 
 myImage.onclick = function(){
