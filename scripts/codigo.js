@@ -14,7 +14,7 @@ myImage.onclick = function(){
 
   } else{
 
-    myImage.setAttribute ('src','https://www.stevens.edu/sites/stevens_edu/files/pictures/DCM/app-logo_May2016.png');
+    myImage.setAttribute ('src','https://www.movilzona.es/app/uploads/2018/02/Instagram-logotipo-fondo.jpg?x=720');
 
   }
 
