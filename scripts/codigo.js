@@ -10,7 +10,7 @@ myImage.onclick = function(){
 
   if(mySrc === 'https://www.movilzona.es/app/uploads/2018/02/Instagram-logotipo-fondo.jpg?x=720'){
 
-    myImage.setAttribute ('src','https://cdn.pixabay.com/photo/2021/06/15/12/17/instagram-6338401_1280.png');
+    myImage.setAttribute ('src','https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png');
 
   } else{
 
